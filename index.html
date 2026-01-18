@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NY ELITES</title>
+  <meta property="og:title" content="NY Elites" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="./favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js" defer></script>
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <div class="page">
+    <header class="nav" data-nav>
+      <div class="container nav__inner">
+        <button class="brand" data-scroll="#home" aria-label="Scroll to top">
+          <span class="brand__logo" aria-hidden="true">
+            <img src="./assets/stock_images/logo_header.png" alt="" />
+          </span>
+        </button>
+
+        <nav class="nav__links" data-nav-menu>
+          <a href="#home" data-scroll="#home">Home</a>
+          <a href="#gallery" data-scroll="#gallery">Gallery</a>
+          <a href="#contact" data-scroll="#contact">Contact</a>
+        </nav>
+
+        <button class="nav__toggle" data-nav-toggle aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="container hero__content">
+          <div class="cta-group">
+            <a href="https://buy.stripe.com/test_7sY6oAd836Hm3L6bPW6Na00"  target="_blank"
+              rel="noopener noreferrer" class="payment-btn" >
+              <span class="left">
+                <i class="fa-solid fa-money-check-dollar" style="font-size: 20px;"></i>
+                <span>pay with</span>
+                <img src="https://logos-world.net/wp-content/uploads/2021/03/Stripe-Logo.png" alt="Stripe" />
+              </span>
+            </a>
+          </div>
+          <div class="social-links cta-group">
+            <h4>Follow us on: </h4>
+            <a href="https://www.facebook.com/people/NY-Elites-League/61586765906936"  target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/nyelitesleague" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="scroll-cue" aria-hidden="true">
+          <span></span>
+        </div>
+      </section>
+
+      <section id="gallery" class="section">
+        <div class="container section__header">
+          <div>
+            <p class="eyebrow">Gallery</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="inline-gallery-shell">
+            <div id="inline-gallery" class="inline-gallery" aria-label="NY Elites gallery" style="height: 460px;"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--compact cta-group">
+        <div class="container">
+          <div class="stack stack--compact">
+            <p class="eyebrow">Contact</p>
+            <div class="card-list card-list--compact cta-group">
+              <a class="card" href="tel:+18166687333">
+                <div class="icon-circle" aria-hidden="true">📞</div>
+                <div>
+                  <p class="muted">Phone</p>
+                  <p>Pardha +1 816 668 7333</p>
+                </div>
+              </a>
+              <a class="card" href="tel:+15183641113">
+                <div class="icon-circle" aria-hidden="true">📞</div>
+                <div>
+                  <p class="muted">Phone</p>
+                  <p>Muji +1 518 364 1113</p>
+                </div>
+              </a>
+              <a class="card" href="tel:+18382007149">
+                <div class="icon-circle" aria-hidden="true">📞</div>
+                <div>
+                  <p class="muted">Phone</p>
+                  <p>Sampath +1 838 200 7149</p>
+                </div>
+              </a>
+              <a class="card" href="mailto:info@premiercricket.club">
+                <div class="icon-circle" aria-hidden="true">✉️</div>
+                <div>
+                  <p class="muted">Email</p>
+                  <p>NYElites007@gmail.com</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div>
+</body>
+
+</html>

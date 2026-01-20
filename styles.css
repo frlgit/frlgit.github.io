@@ -1,16 +1,16 @@
 /* Base theme */
 :root {
-  --bg: #ffffff;
-  --surface: #f5f5f5;
-  --panel: #ffffff;
-  --card: #ffffff;
-  --border: #e4e4e4;
-  --muted: #6b7280;
-  --text: #222222;
-  --primary: #09aa5c;
-  --primary-dark: #078047;
-  --accent: #09aa5c;
-  --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --bg: #0a0e1a;
+  --surface: #141b2e;
+  --panel: #0f1620;
+  --card: #1a2332;
+  --border: #2a3547;
+  --muted: #94a3b8;
+  --text: #e2e8f0;
+  --primary: #3b82f6;
+  --primary-dark: #2563eb;
+  --accent: #60a5fa;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
   --radius: 8px;
   --max-width: 1200px;
   --font-display: "Space Grotesk", "Inter", system-ui, -apple-system, sans-serif;
@@ -24,7 +24,7 @@
 body {
   margin: 0;
   font-family: var(--font-body);
-  background: rgba(89, 155, 102, 0.199);
+  background: var(--bg);
   color: var(--text);
   line-height: 1.6;
   min-height: 100vh;
@@ -56,11 +56,11 @@ a {
   inset: 0 0 auto 0;
   z-index: 20;
   transition: background 0.25s ease, border-color 0.25s ease, backdrop-filter 0.25s ease;
-  padding: 10px 0;
-  background: #ffffff;
+  padding: 5px 0;
+  background: rgba(15, 20, 25, 0.95);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid #e0e0e0;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
 
@@ -79,14 +79,13 @@ a {
   background: none;
   color: var(--text);
   cursor: pointer;
-  padding: 8px 10px;
   border-radius: 999px;
   transition: background 0.2s ease, transform 0.2s ease;
 }
 
 .brand__logo {
-  width: 240px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -127,6 +126,7 @@ a {
   border-radius: 12px;
   border: 1px solid var(--border);
   color: var(--text);
+  background: var(--surface);
 }
 
 .nav__toggle {
@@ -154,7 +154,7 @@ a {
 .nav-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.8);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease;
@@ -192,7 +192,7 @@ a {
   0%, 100% {
     background-image:
       linear-gradient(120deg, rgba(4, 10, 15, 0.296), rgba(4, 10, 15, 0.285)),
-      url("./assets/stock_images/background_1.jpg");
+      url("./assets/stock_images/background_6.jpg");
   }
 
   /* 26%, 50% {
@@ -436,7 +436,7 @@ a {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 14px 16px;
-  background: #ffffff;
+  background: var(--card);
   display: flex;
   gap: 12px;
   align-items: center;
@@ -446,10 +446,10 @@ a {
 }
 
 .card:hover {
-  border-color: #d0d0d0;
-  background: #fafafa;
+  border-color: #3d4450;
+  background: #252932;
   transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
 .icon-circle {
@@ -458,7 +458,7 @@ a {
   border-radius: 8px;
   display: grid;
   place-items: center;
-  background: #f5f5f5;
+  background: var(--surface);
   font-size: 18px;
 }
 
@@ -703,7 +703,7 @@ h4 {
   .nav__links {
     position: fixed;
     inset: 64px 12px auto 12px;
-    background: rgba(255, 255, 255, 0.98);
+    background: rgba(30, 35, 41, 0.98);
     border: 1px solid var(--border);
     border-radius: 18px;
     padding: 14px;
@@ -713,7 +713,7 @@ h4 {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s ease, transform 0.2s ease;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
   }
 
   .nav__links.is-open {
